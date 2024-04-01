@@ -53,7 +53,7 @@
     <Button
         android:id="@+id/buttonSignUp_Main"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="50dp"
         android:layout_marginEnd="84dp"
         android:layout_marginBottom="391dp"
         android:backgroundTint="#7907C5"

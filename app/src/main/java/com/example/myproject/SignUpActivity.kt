@@ -29,7 +29,7 @@ class SignUpActivity : AppCompatActivity() {
         val db = Room.databaseBuilder(this, MyDB::class.java, "mydatabase")
             .fallbackToDestructiveMigration()
             .build()
-var h = Handler()
+        var h = Handler()
         signupButton.setOnClickListener {
             val myName = nameEditText.text.toString()
             val myEmail = emailEditText.text.toString()

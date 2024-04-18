@@ -5,61 +5,127 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pro_img1"
-    tools:context=".SignUpActivity">
+    android:background="@drawable/app_background"
+    tools:context="MyApp.myproject.SignUpActivity">
 
     <EditText
         android:id="@+id/editTextEmailSignUp"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@drawable/signup_edittext_bg"
-        android:drawableLeft="@drawable/baseline_email_24"
+        android:layout_width="302dp"
+        android:layout_height="55dp"
+        android:drawableLeft="@android:drawable/sym_action_email"
         android:ems="10"
-        android:hint="EmailAddress"
+        android:hint="Type email id"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/editTextPasswordSignUp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+        app:layout_constraintTop_toBottomOf="@id/editTextName" />
 
     <EditText
         android:id="@+id/editTextName"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="130dp"
-        android:background="@drawable/signup_edittext_bg"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Name"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/editTextEmailSignUp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
         android:id="@+id/editTextPasswordSignUp"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="81dp"
-        android:background="@drawable/signup_edittext_bg"
-        android:drawableLeft="@drawable/baseline_lock_24"
+        android:layout_width="302dp"
+        android:layout_height="50dp"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
         android:ems="10"
-        android:hint="Password"
+        android:hint="Type Password"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSignUp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmailSignUp" />
+        app:layout_constraintTop_toBottomOf="@id/editTextEmailSignUp" />
 
     <Button
         android:id="@+id/buttonSignUp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="91dp"
-        android:layout_marginBottom="262dp"
-        android:backgroundTint="#3D97DF"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="228dp"
+        android:backgroundTint="#0096D2"
         android:text="Sign Up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordSignUp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextPasswordSignUp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="450dp"
+        android:text="Already have an Account?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="624dp" />
+
+    <TextView
+        android:id="@+id/loginTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="100dp"
+        android:text="Login"
+        android:textColor="#253DD1"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="618dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018"
+        app:srcCompat="@drawable/profile_icon" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/plus_icon" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBackButtonSignUp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:background="@android:drawable/ic_menu_revert"
+        android:backgroundTint="#00FCFAFA"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        app:tint="#FFFFFF"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

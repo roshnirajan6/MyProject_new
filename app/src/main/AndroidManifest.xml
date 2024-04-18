@@ -9,31 +9,29 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="myNewApp"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyProject"
         tools:targetApi="31">
         <activity
-            android:name=".DataActivity"
+            android:name="MyApp.myproject.CartActivity"
             android:exported="false" />
-        <activity
-            android:name=".SplashActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DisplayActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SignUpActivity"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="MyApp.myproject.DataActivity"
+            android:exported="false" />
+        <activity
+            android:name="MyApp.myproject.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="MyApp.myproject.DisplayActivity"
+            android:exported="false" />
+        <activity
+            android:name="MyApp.myproject.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name="MyApp.myproject.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

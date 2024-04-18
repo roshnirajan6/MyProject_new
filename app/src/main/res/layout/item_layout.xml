@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
+    android:layout_height="150dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginHorizontal="20dp"
     android:layout_marginVertical="20dp"
@@ -12,30 +12,52 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:background="#FDF6E3">
 
         <ImageView
-            android:id="@+id/myImage"
+            android:id="@+id/imageViewMyprofile"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="22dp"
             android:adjustViewBounds="true"
             android:padding="8dp"
             android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/myTitle"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/myTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:text="Title"
+            android:layout_width="205dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/myImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewMyprofile"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.358" />
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="79dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#8BE9ED"
+            android:text="Add"
+            android:textColor="#100000"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.918"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
